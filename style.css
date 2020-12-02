@@ -1,0 +1,60 @@
+body {
+	background:#CCCCCC;
+	margin:0;
+}
+.container {
+	max-width:768px;
+	padding:10px;
+	background:#FFFFFF;
+}
+.cover {
+	text-align:center;
+	max-height:400px;
+	overflow:hidden;
+	display:none;
+}
+.thumb {
+	display:block;
+	width:100%;
+	margin-bottom:10px;
+	animation-name:color;
+	animation-duration:4s;
+	animation-iteration-count:infinite;
+	transition: width 0.5s;
+}
+.cover img {
+	width:100%;
+}
+h1 {
+	color:#FF0000;
+}
+ul {
+	clear:both;
+}
+.chapo {
+  font-weight:bold;
+}
+
+@keyframes color {
+	0% {opacity:1;}
+	50% {opacity:0.5;}
+	100% {opacity:1;transform: rotate(1turn);}
+}
+
+@media screen and (min-width: 818px) {
+	.container {
+		margin:auto;
+	}
+	.cover {
+		display:block;
+	}
+}
+
+@media screen and (min-width: 400px) {
+	.thumb {
+		float:left;
+		display:initial;
+		width:200px;
+		margin-right:10px;
+	}
+}
